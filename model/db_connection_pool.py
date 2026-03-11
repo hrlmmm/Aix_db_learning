@@ -32,8 +32,16 @@ class DBConnectionPool:
         try:
             if DBConnectionPool._initialized:
                 return
-            # 获取数据库连接URI，如果环境变量不存在则使用默认值
-            database_uri = os.getenv("SQLALCHEMY_DATABASE_URI", "postgresql+psycopg2://aix_db:1@127.0.0.1:5432/aix_db")
+            # 获取数据库连接URI
+            database_uri = os.getenv("SQLALCHEMY_DATABASE_URI")
+            if not database_uri:
+                # 从分开的环境变量构建连接URI
+                db_host = os.getenv("DB_HOST", "127.0.0.1")
+                db_port = os.getenv("DB_PORT", "5432")
+                db_name = os.getenv("DB_NAME", "chat_db")
+                db_user = os.getenv("DB_USER", "postgres")
+                db_password = os.getenv("DB_PASSWORD", "postgres")
+                database_uri = f"postgresql+psycopg2://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
             self.engine = create_engine(
                 database_uri,
                 pool_size=10,  # 连接池大小
@@ -53,13 +61,19 @@ class DBConnectionPool:
 
         except Exception as e:
             logger.error(f"Failed to load environment variables: {e}")
+    def get_engine(self):
+        """获取数据库引擎"""
+        return self.engine
+    
     def get_session(self):
         """获取数据库会话"""
-        return self.ScopedSession()
+        return self.SessionLocal()
     
     def close(self):
         """关闭所有连接"""
-        self.ScopedSession.remove()
+        # 关闭引擎
+        if hasattr(self, 'engine'):
+            self.engine.dispose()
 
 # 全局单例
 _pool = DBConnectionPool()
