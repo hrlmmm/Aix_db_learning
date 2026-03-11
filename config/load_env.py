@@ -128,5 +128,9 @@ def load_env():
     
     # 根据环境变量 ENV 的值选择加载哪个 .env 文件
     dotenv_path = f'.env.{os.getenv("ENV","dev")}'
+    # 如果 .env.dev 不存在，使用 .env
+    if not os.path.exists(dotenv_path):
+        dotenv_path = '.env'
     logging.info(f"""====当前配置文件是:{dotenv_path}====""")
-    load_dotenv(dotenv_path)
+    # 确保使用 UTF-8 编码加载 .env 文件
+    load_dotenv(dotenv_path, encoding='utf-8')
