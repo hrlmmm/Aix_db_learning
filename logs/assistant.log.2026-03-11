@@ -1,0 +1,102 @@
+INFO     | 2026-03-11 19:55:02 | [PID:41240] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:55:02 | [PID:41240] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:55:02 | [PID:41240] | serv.py:52 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-11 19:55:03 | [PID:41240] | motd.py:148 | display() | 
+  ┌──────────────────────────────────────────────────────────────────────────────┐
+  │                                Sanic v25.3.0                                 │
+  │                       Goin' Fast @ http://0.0.0.0:8088                       │
+  ├───────────────────────┬──────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                     │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                   │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                    │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-ext==24.12.0 │
+  │ [48;2;255;13;104m                     [0m │                                                      │
+  │ Build Fast. Run Fast. │                                                      │
+  └───────────────────────┴──────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-11 19:55:03 | [PID:41240] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-11 19:55:03 | [PID:28024] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:55:03 | [PID:28024] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:55:03 | [PID:22344] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:55:03 | [PID:32112] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:55:03 | [PID:22344] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:55:03 | [PID:32112] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:55:03 | [PID:32112] | runners.py:182 | _run_server_forever() | Starting worker [32112]
+INFO     | 2026-03-11 19:55:03 | [PID:22344] | runners.py:182 | _run_server_forever() | Starting worker [22344]
+ERROR    | 2026-03-11 19:55:09 | [PID:22344] | types.py:408 | respond() | Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\AiBot\Lib\site-packages\sanic\request\types.py", line 402, in respond
+    response = await self.app._run_response_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_run_response_middleware", line 17, in _run_response_middleware
+    from asyncio.futures import Future
+                            ^^^^^^^^^^^
+  File "D:\anaconda3\envs\AiBot\Lib\site-packages\sanic_ext\extensions\http\cors.py", line 60, in _add_cors_headers
+    if ORIGIN_HEADER not in response.headers:
+                            ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'headers'
+ERROR    | 2026-03-11 19:55:09 | [PID:22344] | error.py:203 | log() | Exception occurred while handling uri: 'http://localhost:8088/'
+Traceback (most recent call last):
+  File "handle_request", line 147, in handle_request
+    application. Defaults to `None`.
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sanic.exceptions.ServerError: Invalid response type {'message': 'Hello, Aix-DB!'} (need HTTPResponse)
+INFO     | 2026-03-11 19:55:09 | [PID:22344] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:55:09 | [PID:22344] | http1.py:487 | log_response() | 
+ERROR    | 2026-03-11 19:56:28 | [PID:22344] | types.py:408 | respond() | Exception occurred in one of response middleware handlers
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\AiBot\Lib\site-packages\sanic\request\types.py", line 402, in respond
+    response = await self.app._run_response_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "_run_response_middleware", line 17, in _run_response_middleware
+    from asyncio.futures import Future
+                            ^^^^^^^^^^^
+  File "D:\anaconda3\envs\AiBot\Lib\site-packages\sanic_ext\extensions\http\cors.py", line 60, in _add_cors_headers
+    if ORIGIN_HEADER not in response.headers:
+                            ^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'headers'
+ERROR    | 2026-03-11 19:56:28 | [PID:22344] | error.py:203 | log() | Exception occurred while handling uri: 'http://localhost:8088/health'
+Traceback (most recent call last):
+  File "handle_request", line 147, in handle_request
+    application. Defaults to `None`.
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sanic.exceptions.ServerError: Invalid response type {'status': 'OK'} (need HTTPResponse)
+INFO     | 2026-03-11 19:56:28 | [PID:22344] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:56:28 | [PID:22344] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:57:22 | [PID:41240] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-11 19:57:22 | [PID:41240] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-11 19:58:25 | [PID:46224] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:58:25 | [PID:46224] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:58:25 | [PID:46224] | serv.py:52 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-11 19:58:25 | [PID:46224] | motd.py:148 | display() | 
+  ┌──────────────────────────────────────────────────────────────────────────────┐
+  │                                Sanic v25.3.0                                 │
+  │                       Goin' Fast @ http://0.0.0.0:8088                       │
+  ├───────────────────────┬──────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                     │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                   │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                            │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                    │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                  │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-ext==24.12.0 │
+  │ [48;2;255;13;104m                     [0m │                                                      │
+  │ Build Fast. Run Fast. │                                                      │
+  └───────────────────────┴──────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-11 19:58:25 | [PID:46224] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-11 19:58:26 | [PID:45804] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:58:26 | [PID:45804] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:58:26 | [PID:10224] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:58:26 | [PID:10224] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:58:26 | [PID:48044] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-11 19:58:26 | [PID:48044] | load_env.py:131 | load_env() | ====当前配置文件是:.env.dev====
+INFO     | 2026-03-11 19:58:26 | [PID:10224] | runners.py:182 | _run_server_forever() | Starting worker [10224]
+INFO     | 2026-03-11 19:58:26 | [PID:48044] | runners.py:182 | _run_server_forever() | Starting worker [48044]
+INFO     | 2026-03-11 19:58:31 | [PID:48044] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:58:31 | [PID:48044] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:59:23 | [PID:48044] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:59:23 | [PID:48044] | http1.py:487 | log_response() | 
+INFO     | 2026-03-11 19:59:28 | [PID:46224] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-11 19:59:28 | [PID:46224] | startup.py:1151 | serve() | Server Stopped
