@@ -7,6 +7,7 @@ os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 from sanic import Sanic
 from sanic.response import empty, json
 from sanic.worker.manager import WorkerManager
+from controllers.user_rest_api import bp as user_bp
 
 # 设置 worker 启动超时时间（单位：0.1秒）
 # 设置为 180 秒（1800 * 0.1秒），允许 workers 有足够时间完成启动
@@ -31,7 +32,7 @@ if not root_logger.handlers:
 
 # 创建 Sanic 应用实例
 app = Sanic("Aix-DB", configure_logging=False)
-
+app.blueprint(user_bp)
 @app.get("/health")
 async def health_check(request):
     return json({"status": "OK"})
