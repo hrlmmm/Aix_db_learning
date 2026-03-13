@@ -1,31 +1,652 @@
-INFO     | 2026-03-12 21:36:59 | [PID:20328] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
-INFO     | 2026-03-12 21:36:59 | [PID:20328] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
-INFO     | 2026-03-12 21:36:59 | [PID:20328] | serv.py:52 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
-INFO     | 2026-03-12 21:36:59 | [PID:20328] | motd.py:148 | display() | 
-  ┌────────────────────────────────────────────────────────────────────────┐
-  │                             Sanic v25.3.0                              │
-  │                    Goin' Fast @ http://0.0.0.0:8088                    │
-  ├───────────────────────┬────────────────────────────────────────────────┤
-  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                               │
-  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers             │
-  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                      │
-  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                              │
-  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0            │
-  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,              │
-  │ [48;2;255;13;104m                     [0m │           sanic-ext==24.12.0                   │
-  │ Build Fast. Run Fast. │                                                │
-  └───────────────────────┴────────────────────────────────────────────────┘
+INFO     | 2026-03-13 12:17:43 | [PID:41544] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:17:43 | [PID:41544] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:17:43 | [PID:41544] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:17:43 | [PID:41544] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
 
-WARNING  | 2026-03-12 21:36:59 | [PID:20328] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
-INFO     | 2026-03-12 21:36:59 | [PID:42716] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
-INFO     | 2026-03-12 21:36:59 | [PID:42716] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
-INFO     | 2026-03-12 21:37:00 | [PID:45744] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
-INFO     | 2026-03-12 21:37:00 | [PID:45744] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
-INFO     | 2026-03-12 21:37:00 | [PID:51804] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
-INFO     | 2026-03-12 21:37:00 | [PID:51804] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
-INFO     | 2026-03-12 21:37:00 | [PID:45744] | runners.py:182 | _run_server_forever() | Starting worker [45744]
-INFO     | 2026-03-12 21:37:00 | [PID:51804] | runners.py:182 | _run_server_forever() | Starting worker [51804]
-INFO     | 2026-03-12 21:37:03 | [PID:51804] | http1.py:487 | log_response() | 
-INFO     | 2026-03-12 21:37:03 | [PID:51804] | http1.py:487 | log_response() | 
-INFO     | 2026-03-12 21:37:12 | [PID:20328] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
-INFO     | 2026-03-12 21:37:12 | [PID:20328] | startup.py:1151 | serve() | Server Stopped
+WARNING  | 2026-03-13 12:17:43 | [PID:41544] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:17:43 | [PID:21528] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:17:43 | [PID:21528] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:17:44 | [PID:21428] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:17:44 | [PID:21428] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:17:44 | [PID:28008] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:17:44 | [PID:28008] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:17:44 | [PID:21428] | runners.py:182 | _run_server_forever() | Starting worker [21428]
+INFO     | 2026-03-13 12:17:44 | [PID:28008] | runners.py:182 | _run_server_forever() | Starting worker [28008]
+INFO     | 2026-03-13 12:17:48 | [PID:28008] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:17:48 | [PID:28008] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:18:08 | [PID:21428] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:19:34 | [PID:21428] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:23:31 | [PID:28008] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:27:10 | [PID:21428] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'lisi', 'password': '123456'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 12:27:10 | [PID:21428] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:28:50 | [PID:41544] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 12:28:50 | [PID:41544] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 12:28:55 | [PID:37772] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:28:55 | [PID:37772] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:28:55 | [PID:37772] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:28:55 | [PID:37772] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 12:28:55 | [PID:37772] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:28:55 | [PID:45168] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:28:55 | [PID:45168] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:28:56 | [PID:52356] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:28:56 | [PID:5036] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:28:56 | [PID:52356] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:28:56 | [PID:5036] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:28:56 | [PID:5036] | runners.py:182 | _run_server_forever() | Starting worker [5036]
+INFO     | 2026-03-13 12:28:56 | [PID:52356] | runners.py:182 | _run_server_forever() | Starting worker [52356]
+INFO     | 2026-03-13 12:28:59 | [PID:5036] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'lisi', 'password': '123456'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 12:28:59 | [PID:5036] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:30:13 | [PID:37772] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 12:30:13 | [PID:37772] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 12:30:20 | [PID:52056] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:30:20 | [PID:52056] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:30:20 | [PID:52056] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:30:20 | [PID:52056] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 12:30:20 | [PID:52056] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:30:20 | [PID:39824] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:30:20 | [PID:39824] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:30:21 | [PID:34992] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:30:21 | [PID:34992] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:30:21 | [PID:13680] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:30:21 | [PID:13680] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:30:21 | [PID:34992] | runners.py:182 | _run_server_forever() | Starting worker [34992]
+INFO     | 2026-03-13 12:30:21 | [PID:13680] | runners.py:182 | _run_server_forever() | Starting worker [13680]
+INFO     | 2026-03-13 12:30:23 | [PID:34992] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'lisi', 'password': '123456'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 12:30:23 | [PID:34992] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:30:29 | [PID:34992] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'lisi', 'password': '123456'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 12:30:29 | [PID:34992] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:31:12 | [PID:52056] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 12:31:12 | [PID:52056] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 12:31:14 | [PID:51032] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:31:14 | [PID:51032] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:31:14 | [PID:51032] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:31:14 | [PID:51032] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 12:31:14 | [PID:51032] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:31:15 | [PID:26600] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:31:15 | [PID:26600] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:31:16 | [PID:4796] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:31:16 | [PID:51592] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:31:16 | [PID:4796] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:31:16 | [PID:51592] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:31:16 | [PID:51592] | runners.py:182 | _run_server_forever() | Starting worker [51592]
+INFO     | 2026-03-13 12:31:16 | [PID:4796] | runners.py:182 | _run_server_forever() | Starting worker [4796]
+INFO     | 2026-03-13 12:31:18 | [PID:51592] | res_decorator.py:122 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'lisi', 'password': '123456'}, Response: {'code': 401, 'msg': '用户名或密码错误', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 12:31:18 | [PID:51592] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:35:05 | [PID:51032] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 12:35:05 | [PID:51032] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 12:50:16 | [PID:15688] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:50:16 | [PID:15688] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:50:16 | [PID:15688] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:50:16 | [PID:15688] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 12:50:16 | [PID:15688] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:50:17 | [PID:17588] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:50:17 | [PID:17588] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:50:17 | [PID:36180] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:50:17 | [PID:44464] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:50:17 | [PID:36180] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:50:17 | [PID:44464] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:50:17 | [PID:44464] | runners.py:182 | _run_server_forever() | Starting worker [44464]
+INFO     | 2026-03-13 12:50:17 | [PID:36180] | runners.py:182 | _run_server_forever() | Starting worker [36180]
+INFO     | 2026-03-13 12:50:22 | [PID:44464] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:52:10 | [PID:44464] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:52:17 | [PID:44464] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:54:14 | [PID:44464] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 12:54:25 | [PID:15688] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 12:54:25 | [PID:15688] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 12:55:21 | [PID:36792] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:55:21 | [PID:36792] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:55:21 | [PID:36792] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 12:55:21 | [PID:36792] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 12:55:21 | [PID:36792] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 12:55:23 | [PID:53884] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:55:23 | [PID:53884] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:55:25 | [PID:14568] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:55:25 | [PID:14568] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:55:25 | [PID:9852] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 12:55:25 | [PID:9852] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 12:55:25 | [PID:14568] | runners.py:182 | _run_server_forever() | Starting worker [14568]
+INFO     | 2026-03-13 12:55:25 | [PID:9852] | runners.py:182 | _run_server_forever() | Starting worker [9852]
+INFO     | 2026-03-13 12:55:49 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:02:42 | [PID:9852] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:13:39 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjE5fQ.HIbyzz906m4XWUqSHU9vJN4MbB3vGCnyfVA-5KhWIJU'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:13:39 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:13:44 | [PID:46172] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:13:44 | [PID:46172] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:13:44 | [PID:46172] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:13:44 | [PID:46172] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:13:44 | [PID:46172] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:13:45 | [PID:51268] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:13:45 | [PID:51268] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:13:46 | [PID:46228] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:13:46 | [PID:46228] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:13:46 | [PID:47052] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:13:46 | [PID:47052] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:13:46 | [PID:46228] | runners.py:182 | _run_server_forever() | Starting worker [46228]
+INFO     | 2026-03-13 13:13:46 | [PID:47052] | runners.py:182 | _run_server_forever() | Starting worker [47052]
+INFO     | 2026-03-13 13:13:50 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjMwfQ.2NT19dSVyUkGCADwhLg-H6_ZsZhm3grxWFeX-8srnDM'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:13:50 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:03 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjQzfQ.-kFLPtu5OuHUROpZ0cwXnyomiHD5L8xZq6f4clj_OnU'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:03 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:05 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjQ1fQ.JCGEvEmnxOqXu0NeU6W84cm5ja0biQ1DjqoSgcFdG8U'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:05 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:06 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjQ2fQ.Ni6va4Ni-5G8N858EM6sK7aeZAu7FrTodpYXjCJUwrQ'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:06 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:07 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjQ3fQ.ILQ6-LkidIe7Q2GxjHZoog0AUeyMhybZyO6YzdKbDUQ'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:07 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:09 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjQ5fQ.8PmNVXOjbmbPFCXHYo0WGuSoYEQQrvShckVdnN8bo9c'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:09 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:11 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjUxfQ.ADqNndqOQelplHodZNIYvAQPnmmlqVr87bD7VeZwPgk'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:11 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:12 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjUyfQ.0JrUmngnJEnwziGKqihpBGTJc-gaMZMqSbO-J_DsgC8'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:12 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:14:13 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MjUzfQ.XD8MoTsnIGZZJtR1wP9VtuMy80NN-Ldh7ub1eF_qXMg'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:14:13 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:15:25 | [PID:8908] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:15:25 | [PID:8908] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:15:25 | [PID:8908] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:15:25 | [PID:8908] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:15:25 | [PID:8908] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:15:27 | [PID:52520] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:15:27 | [PID:52520] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:15:28 | [PID:48092] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:15:28 | [PID:34516] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:15:28 | [PID:48092] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:15:28 | [PID:34516] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:15:28 | [PID:34516] | runners.py:182 | _run_server_forever() | Starting worker [34516]
+INFO     | 2026-03-13 13:15:28 | [PID:48092] | runners.py:182 | _run_server_forever() | Starting worker [48092]
+INFO     | 2026-03-13 13:15:57 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MzU3fQ.69eci5UuRqJ03k97qDRUvAoTZyff7AvAforN9F_mvO8'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:15:57 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:16:04 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MzY0fQ.Ws5iuDLkcdGg5gSxeGUad31lHTr7nlm_pkDIXeVBJ7M'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:16:04 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:16:10 | [PID:14568] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1MzcwfQ.D_LWjkKRoaczLtIw4AQbeTFxYxidO48tZ13p2BwYqdg'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:16:10 | [PID:14568] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:16:34 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1Mzk0fQ.TKwqWr5X5vKEEJJ5S8Xh_A8RYrKSP_yAkxXAHvfLfac'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:16:34 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:16:58 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NDE4fQ.1VyvuQTOiAcU8zD-fLbqJaizBIi8y8d5ZClfJhqn7m0'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:16:58 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:17:02 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NDIyfQ.Tm_OJVzTUXu-BN3vpKfLHXOmk-ajqSiOZlTAphxqmjQ'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:17:02 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:17:04 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NDI0fQ.sdvOjUQjclCKx-cLe8JU_7MyG-JFXRwFKXyKCTuuUwY'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:17:04 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:17:19 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NDM5fQ.fYkrb52__IMczClFiZOQEzVLn8pME5ydnSAqAQgxCUA'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:17:19 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:17:32 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NDUyfQ.w33j4EqIqMtVSMo2wRXbhuZSLGU9ejS1SXOpyMk1BMo'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:17:32 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:18:09 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:18:18 | [PID:51796] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:18:18 | [PID:51796] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:18:18 | [PID:51796] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:18:18 | [PID:51796] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:18:18 | [PID:51796] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:18:20 | [PID:38604] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:18:20 | [PID:38604] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:18:21 | [PID:19668] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:18:21 | [PID:19668] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:18:21 | [PID:53980] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:18:21 | [PID:53980] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:18:21 | [PID:19668] | runners.py:182 | _run_server_forever() | Starting worker [19668]
+INFO     | 2026-03-13 13:18:21 | [PID:53980] | runners.py:182 | _run_server_forever() | Starting worker [53980]
+INFO     | 2026-03-13 13:18:24 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:18:29 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:18:55 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NTM1fQ.NM9fs--fdJNhEw_VHY3EF-1fG12X3MPMycpX8MsqkZY'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:18:55 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:19:15 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NTU1fQ.qdqURtejdrXH0ktIxydIyNiIJSjtLuB6h5B82qnLlDk'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:19:15 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:19:20 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NTYwfQ.SmcO-N-WiwxcPmUQGwoEwrgEWoTocLk25ywQEfhNvdk'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:19:20 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:19:22 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NTYyfQ.4eA2EcCKEsigWvWDPoaek3yWpVbG1z_fvRcmUpjj-rE'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:19:22 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:19:33 | [PID:46228] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY1NTczfQ.giBHkqcChLSX_keWZd6h-LQaCcKfLKbeWd1ADIc2i54'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:19:33 | [PID:46228] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:19:55 | [PID:52220] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:19:55 | [PID:52220] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:19:55 | [PID:52220] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:19:55 | [PID:52220] | motd.py:148 | display() | 
+  ┌────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                     Sanic v25.3.0                                      │
+  │                            Goin' Fast @ http://0.0.0.0:8088                            │
+  ├───────────────────────┬────────────────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                               │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                                      │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                              │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                            │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-testing==24.6.0,       │
+  │ [48;2;255;13;104m                     [0m │           sanic-ext==24.12.0                                   │
+  │ Build Fast. Run Fast. │                                                                │
+  └───────────────────────┴────────────────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:19:55 | [PID:52220] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:19:56 | [PID:47380] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:19:56 | [PID:47380] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:19:58 | [PID:49960] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:19:58 | [PID:49960] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:19:58 | [PID:33036] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:19:58 | [PID:33036] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:19:58 | [PID:49960] | runners.py:182 | _run_server_forever() | Starting worker [49960]
+INFO     | 2026-03-13 13:19:58 | [PID:33036] | runners.py:182 | _run_server_forever() | Starting worker [33036]
+INFO     | 2026-03-13 13:31:11 | [PID:49960] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY2MjIzfQ.n6TgzhEjneTMtSZRN0yOL__E8GJlXeRHQGI6Oj6-I0M'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:31:11 | [PID:49960] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:32:33 | [PID:33036] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/login, Method: POST, Params: {}, JSON Body: {'username': 'admin', 'password': '123456'}, Response: {'code': 200, 'msg': 'ok', 'data': {'token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiZXhwIjoxNzczNDY2MzUzfQ.eFivkkAilqXSJxgUWFj3wxOY95HLDRmtRE2o9hYsbJA'}} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:32:33 | [PID:33036] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:36:46 | [PID:33036] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:36:53 | [PID:52220] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 13:36:53 | [PID:52220] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 13:37:03 | [PID:45744] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:37:03 | [PID:45744] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:37:03 | [PID:45744] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:37:03 | [PID:45744] | motd.py:148 | display() | 
+  ┌────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                     Sanic v25.3.0                                      │
+  │                            Goin' Fast @ http://0.0.0.0:8088                            │
+  ├───────────────────────┬────────────────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                               │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                                      │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                              │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                            │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-testing==24.6.0,       │
+  │ [48;2;255;13;104m                     [0m │           sanic-ext==24.12.0                                   │
+  │ Build Fast. Run Fast. │                                                                │
+  └───────────────────────┴────────────────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:37:03 | [PID:45744] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:37:05 | [PID:49664] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:37:05 | [PID:49664] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:37:07 | [PID:49872] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:37:07 | [PID:49872] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:37:07 | [PID:50416] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:37:07 | [PID:50416] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:37:07 | [PID:49872] | runners.py:182 | _run_server_forever() | Starting worker [49872]
+INFO     | 2026-03-13 13:37:07 | [PID:50416] | runners.py:182 | _run_server_forever() | Starting worker [50416]
+INFO     | 2026-03-13 13:37:25 | [PID:50416] | res_decorator.py:122 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': 18320498898}, Response: {'code': 400, 'msg': '参数验证失败: mobile: Input should be a valid string', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:37:25 | [PID:50416] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:39:56 | [PID:50416] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:39:57 | [PID:50416] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:40:24 | [PID:50416] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:40:24 | [PID:50416] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:40:39 | [PID:37200] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:40:39 | [PID:37200] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:40:39 | [PID:37200] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:40:40 | [PID:37200] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:40:40 | [PID:37200] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:40:41 | [PID:42944] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:40:41 | [PID:42944] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:40:43 | [PID:41940] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:40:43 | [PID:37148] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:40:43 | [PID:37148] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:40:43 | [PID:41940] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:40:43 | [PID:41940] | runners.py:182 | _run_server_forever() | Starting worker [41940]
+INFO     | 2026-03-13 13:40:43 | [PID:37148] | runners.py:182 | _run_server_forever() | Starting worker [37148]
+INFO     | 2026-03-13 13:40:48 | [PID:50416] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:40:48 | [PID:50416] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:41:05 | [PID:54140] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:41:05 | [PID:54140] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:41:05 | [PID:54140] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:41:06 | [PID:54140] | motd.py:148 | display() | 
+  ┌────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                     Sanic v25.3.0                                      │
+  │                            Goin' Fast @ http://0.0.0.0:8088                            │
+  ├───────────────────────┬────────────────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                               │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                                      │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                              │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                            │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-testing==24.6.0,       │
+  │ [48;2;255;13;104m                     [0m │           sanic-ext==24.12.0                                   │
+  │ Build Fast. Run Fast. │                                                                │
+  └───────────────────────┴────────────────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:41:06 | [PID:54140] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:41:07 | [PID:21700] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:41:07 | [PID:21700] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:41:09 | [PID:20332] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:41:09 | [PID:20332] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:41:09 | [PID:53180] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:41:09 | [PID:53180] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:41:09 | [PID:20332] | runners.py:182 | _run_server_forever() | Starting worker [20332]
+INFO     | 2026-03-13 13:41:09 | [PID:53180] | runners.py:182 | _run_server_forever() | Starting worker [53180]
+INFO     | 2026-03-13 13:41:33 | [PID:20332] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:41:33 | [PID:20332] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:41:58 | [PID:20332] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:41:58 | [PID:20332] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:42:08 | [PID:54140] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 13:42:08 | [PID:54140] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 13:42:19 | [PID:14704] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:19 | [PID:14704] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:19 | [PID:14704] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:42:19 | [PID:14704] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:42:19 | [PID:14704] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:42:19 | [PID:46564] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:19 | [PID:46564] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:20 | [PID:44088] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:20 | [PID:43336] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:20 | [PID:44088] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:20 | [PID:43336] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:20 | [PID:43336] | runners.py:182 | _run_server_forever() | Starting worker [43336]
+INFO     | 2026-03-13 13:42:20 | [PID:44088] | runners.py:182 | _run_server_forever() | Starting worker [44088]
+INFO     | 2026-03-13 13:42:28 | [PID:14704] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 13:42:28 | [PID:14704] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 13:42:32 | [PID:20488] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:32 | [PID:20488] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:32 | [PID:20488] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:42:32 | [PID:20488] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:42:32 | [PID:20488] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:42:33 | [PID:8744] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:33 | [PID:8744] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:33 | [PID:49096] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:33 | [PID:49096] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:33 | [PID:26176] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:42:33 | [PID:26176] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:42:33 | [PID:49096] | runners.py:182 | _run_server_forever() | Starting worker [49096]
+INFO     | 2026-03-13 13:42:33 | [PID:26176] | runners.py:182 | _run_server_forever() | Starting worker [26176]
+INFO     | 2026-03-13 13:42:57 | [PID:20488] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 13:42:57 | [PID:20488] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 13:43:04 | [PID:32272] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:04 | [PID:32272] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:04 | [PID:32272] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:43:05 | [PID:32272] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:43:05 | [PID:32272] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:43:05 | [PID:44060] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:05 | [PID:44060] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:06 | [PID:15656] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:06 | [PID:31628] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:06 | [PID:15656] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:06 | [PID:31628] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:06 | [PID:31628] | runners.py:182 | _run_server_forever() | Starting worker [31628]
+INFO     | 2026-03-13 13:43:06 | [PID:15656] | runners.py:182 | _run_server_forever() | Starting worker [15656]
+INFO     | 2026-03-13 13:43:12 | [PID:15656] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:43:12 | [PID:15656] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 13:43:21 | [PID:32272] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 13:43:22 | [PID:32272] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 13:43:25 | [PID:50808] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:25 | [PID:50808] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:25 | [PID:50808] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 13:43:25 | [PID:50808] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 13:43:25 | [PID:50808] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 13:43:25 | [PID:52660] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:25 | [PID:52660] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:26 | [PID:50776] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:26 | [PID:50776] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:26 | [PID:47984] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 13:43:26 | [PID:47984] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 13:43:26 | [PID:47984] | runners.py:182 | _run_server_forever() | Starting worker [47984]
+INFO     | 2026-03-13 13:43:26 | [PID:50776] | runners.py:182 | _run_server_forever() | Starting worker [50776]
+INFO     | 2026-03-13 13:43:31 | [PID:47984] | res_decorator.py:138 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 9999, 'msg': '系统异常', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 13:43:31 | [PID:47984] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:07:47 | [PID:50808] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 14:07:47 | [PID:50808] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 14:20:18 | [PID:47580] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:20:18 | [PID:47580] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:20:18 | [PID:47580] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 14:20:18 | [PID:47580] | motd.py:148 | display() | 
+  ┌─────────────────────────────────────────────────────────────────────────┐
+  │                              Sanic v25.3.0                              │
+  │                     Goin' Fast @ http://0.0.0.0:8088                    │
+  ├───────────────────────┬─────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers              │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                       │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                               │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0,               │
+  │ [48;2;255;13;104m                     [0m │           sanic-testing==24.6.0,                │
+  │                       │           sanic-ext==24.12.0                    │
+  └───────────────────────┴─────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 14:20:18 | [PID:47580] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 14:20:18 | [PID:51564] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:20:18 | [PID:51564] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:20:19 | [PID:53400] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:20:19 | [PID:53400] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:20:19 | [PID:45884] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:20:19 | [PID:45884] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:20:19 | [PID:53400] | runners.py:182 | _run_server_forever() | Starting worker [53400]
+INFO     | 2026-03-13 14:20:19 | [PID:45884] | runners.py:182 | _run_server_forever() | Starting worker [45884]
+INFO     | 2026-03-13 14:20:34 | [PID:45884] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 200, 'msg': 'ok', 'data': True} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 14:20:34 | [PID:45884] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:20:48 | [PID:45884] | res_decorator.py:122 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'lisi', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 400, 'msg': '用户名已存在', 'data': None} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 14:20:48 | [PID:45884] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:20:58 | [PID:45884] | res_decorator.py:104 | http_res_wrapper() | Request Path: /user/add, Method: POST, Params: {}, JSON Body: {'user_name': 'zhangsan', 'password': '123456', 'mobile': '18320498898'}, Response: {'code': 200, 'msg': 'ok', 'data': True} [root logger level: 20, handlers: 2]
+INFO     | 2026-03-13 14:20:58 | [PID:45884] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:29:08 | [PID:47580] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 14:29:08 | [PID:47580] | startup.py:1151 | serve() | Server Stopped
+INFO     | 2026-03-13 14:32:46 | [PID:27848] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:32:46 | [PID:27848] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:32:46 | [PID:27848] | serv.py:53 | <module>() | Starting Aix-DB server on 0.0.0.0:8088
+INFO     | 2026-03-13 14:32:46 | [PID:27848] | motd.py:148 | display() | 
+  ┌────────────────────────────────────────────────────────────────────────────────────────┐
+  │                                     Sanic v25.3.0                                      │
+  │                            Goin' Fast @ http://0.0.0.0:8088                            │
+  ├───────────────────────┬────────────────────────────────────────────────────────────────┤
+  │ [48;2;255;13;104m                     [0m │      app: Aix-DB                                               │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▄███ █████ ██    [0m │     mode: production, w/ 2 workers                             │
+  │ [38;2;255;255;255;48;2;255;13;104m   ██                [0m │   server: sanic, HTTP/1.1                                      │
+  │ [38;2;255;255;255;48;2;255;13;104m    ▀███████ ███▄    [0m │   python: 3.12.12                                              │
+  │ [38;2;255;255;255;48;2;255;13;104m                ██   [0m │ platform: Windows-11-10.0.22631-SP0                            │
+  │ [38;2;255;255;255;48;2;255;13;104m   ████ ████████▀    [0m │ packages: sanic-routing==23.12.0, sanic-testing==24.6.0,       │
+  │ [48;2;255;13;104m                     [0m │           sanic-ext==24.12.0                                   │
+  │ Build Fast. Run Fast. │                                                                │
+  └───────────────────────┴────────────────────────────────────────────────────────────────┘
+
+WARNING  | 2026-03-13 14:32:46 | [PID:27848] | startup.py:700 | _helper() | [33mSanic is running in PRODUCTION mode. Consider using '--debug' or '--dev' while actively developing your application.[0m
+INFO     | 2026-03-13 14:32:47 | [PID:48540] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:32:47 | [PID:48540] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:32:48 | [PID:51880] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:32:48 | [PID:51880] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:32:48 | [PID:42408] | load_env.py:116 | load_env() | Logging configuration loaded successfully from config/logging.conf, colorlog_available=True
+INFO     | 2026-03-13 14:32:48 | [PID:42408] | load_env.py:134 | load_env() | ====当前配置文件是:.env====
+INFO     | 2026-03-13 14:32:48 | [PID:51880] | runners.py:182 | _run_server_forever() | Starting worker [51880]
+INFO     | 2026-03-13 14:32:48 | [PID:42408] | runners.py:182 | _run_server_forever() | Starting worker [42408]
+INFO     | 2026-03-13 14:32:53 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:32:53 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:32:56 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:32:57 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:04 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:04 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:12 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:12 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:28 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:28 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:45 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:46 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:52 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:33:58 | [PID:42408] | http1.py:487 | log_response() | 
+INFO     | 2026-03-13 14:34:07 | [PID:27848] | manager.py:389 | shutdown_signal() | Received signal SIGINT. Shutting down.
+INFO     | 2026-03-13 14:34:07 | [PID:27848] | startup.py:1151 | serve() | Server Stopped
